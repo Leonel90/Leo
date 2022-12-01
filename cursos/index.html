@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Leo</title>
+    <title>Cursos</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,12 +25,12 @@
                     <div class="mb-3">
                         <label for="fullName" class="form-label">Nombre</label>
                         <input type="text" name="fullName" id="fullName" class="form-control"
-                            placeholder="Ingrese su Nombre">
+                            placeholder="Ingrese su nombre">
                     </div>
                     <div class="mb-3">
                         <label for="identification" class="form-label">Identificación</label>
                         <input type="text" name="identification" id="identification" class="form-control"
-                            placeholder="Ingrese su cedula">
+                            placeholder="Ingrese su cédula">
                     </div>
                     <div class="mb-3">
                         <label for="direction" class="form-label">Dirección</label>
@@ -38,17 +38,88 @@
                             placeholder="Ingrese su dirección">
                     </div>
                     <div class="mb-3">
-                        <label for="enrollment" class="form-label">Matricula</label>
+                        <label for="enrollment" class="form-label">Matrícula</label>
                         <input type="text" name="enrollment" id="enrollment" class="form-control"
                             placeholder="Ingrese el número de su matrícula">
                     </div>
                     <div class="mb-3">
-                        <label for="level" class="form-label">Nivel</label>
-                        <input type="text" name="level" id="level" class="form-control" placeholder="Ingrese su Semestre">
+                        <label for="level" class="form-label">Semestre</label>
+                        <input type="text" name="level" id="level" class="form-control"
+                            placeholder="Ingrese su semestre">
                     </div>
                 </div>
                 <div class="card-footer text-muted">
                     <button class="btn btn-primary" onclick="addStudent()">Agregar estudiante</button>
+                </div>
+            </div>
+            <hr>
+            <div class="card">
+                <div class="card-header">
+                    PROFESOR
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="fullName-teacher" class="form-label">Nombre</label>
+                        <input type="text" name="fullName-teacher" id="fullName-teacher" class="form-control"
+                            placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="identification-teacher" class="form-label">Identificación</label>
+                        <input type="text" name="identification-teacher" id="identification-teacher"
+                            class="form-control" placeholder="Ingrese su cédula">
+                    </div>
+                    <div class="mb-3">
+                        <label for="direction-teacher" class="form-label">Dirección</label>
+                        <input type="text" name="direction-teacher" id="direction-teacher" class="form-control"
+                            placeholder="Ingrese su dirección">
+                    </div>
+                    <div class="mb-3">
+                        <label for="title-teacher" class="form-label">Título</label>
+                        <input type="text" name="title-teacher" id="title-teacher" class="form-control"
+                            placeholder="Ingrese su título">
+                    </div>
+                    <div class="mb-3">
+                        <label for="matter-teacher" class="form-label">Asignatura</label>
+                        <select name="matter-teacher" id="matter-teacher">
+                            <option value="programacion">Programación</option>
+                            <option value="metodologia">Metodología</option>
+                            <option value="baseDeDatos">Base de Datos</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="card-footer text-muted">
+                    <button class="btn btn-primary" onclick="addTeacher()">Agregar profesor</button>
+                </div>
+            </div>
+            <hr>
+            <div class="card">
+                <div class="card-header">
+                    CURSO
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="fullName-teacher" class="form-label">Semestre</label>
+                        <select name="matter-teacher" id="matter-teacher">
+                            <option value="1er">1er Semestre</option>
+                            <option value="2do">2do Semestre</option>
+                            <option value="3ro">3ro Semestre</option>
+                            <option value="4to">4to Semestre</option>
+                            <option value="5to">5to Semestre</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="parallel-course" class="form-label">Paralelo</label>
+                        <input type="text" name="parallel-course" id="parallel-course"
+                            class="form-control" placeholder="Ingrese su paralelo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="hour-course" class="form-label">Hora</label>
+                        <input type="text" name="hour-course" id="hour-course" class="form-control"
+                            placeholder="Ingrese su dirección">
+                    </div>
+                </div>
+                <div class="card-footer text-muted">
+                    <button class="btn btn-primary" onclick="addTeacher()">Agregar profesor</button>
                 </div>
             </div>
         </div>
